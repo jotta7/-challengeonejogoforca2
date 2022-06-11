@@ -1,0 +1,319 @@
+body{
+    font-family: 'Creepster', cursive;
+}
+.home{
+    background-image: url(./img/bgvertical2.jpg);
+    background-size:100vh;
+    background-repeat: no-repeat;
+    font-family: 'Creepster', cursive;
+}
+/*PAG INICIAL*/
+.container{
+    display: block;
+}
+.container img{
+    width: 500px;
+    margin: 10% 0 0 0;
+}
+.ilustracao{
+    flex-basis: 80%;
+}
+.ilustracao h1{
+    font-size: 5em; 
+    margin: 10% auto;
+    color: greenyellow;
+    padding: 10px;
+    transition: 1s all;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    border: solid 2px greenyellow;
+}
+
+.ilustracao h1:hover{
+    transform: rotate(10deg);
+}
+.portal{
+    position: absolute;
+    width: 100%;
+    right:0;
+    text-align: center;
+    display:none;
+}
+.portal img{
+    width: 400px;
+}
+.navegacao{
+    flex-basis: 20%;
+    margin: 20% auto;
+    
+}
+.bnt-nav{
+    padding:30px;
+    width: 200px;
+    display: block;
+    margin: 30px auto;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 8px 8px 20px greenyellow;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50px;
+    border: solid 2px greenyellow;
+    color: greenyellow;
+    font-family: 'Creepster', cursive;
+}
+.bnt-nav a{
+    text-decoration: none;
+    color: greenyellow;
+    font-family: 'Creepster', cursive;
+}
+.bnt-nav:hover{
+    box-shadow: none;
+}
+
+/*PAG ADICIONAR*/
+.inputPadrao{
+    text-transform: uppercase;
+    border: solid 2px greenyellow;
+    font-size: 1.5em;
+    width: 350px;
+    box-shadow: 8px 8px 20px greenyellow;
+    background: none;
+    margin:0;
+    color:greenyellow;
+}
+fieldset{
+    border:none;
+    margin:0;
+}
+label{
+    font-size: 1.5em;
+    color: greenyellow;
+}
+
+/*JOGO*/
+.bodyPlay{
+    background: url(./img/back4.jpg);
+    background-size:200vh;
+    background-repeat: no-repeat;
+}
+.containerJogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30% auto;
+}
+#imagem{
+    background-image: url(./img/forca0.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+}
+#palavraSecreta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+.letras{
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom: 2px solid #8b008b;
+    color: greenyellow;
+    margin: 0 2px;
+    text-transform: uppercase;
+}
+#teclado{
+    margin:10px 0;
+
+}
+.teclas button{
+    width: 24px;
+    height:24px;
+    margin: 2px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px aqua;
+    border-radius:5px;
+    border: 1px solid aqua;
+    color: greenyellow;
+    font-weight: 400;
+    background: rgba(0,0,0,0.5);
+}
+.teclas button:disabled{
+    cursor: not-allowed;
+}
+.teclas button:hover{
+    transform: scale(1.3);
+}
+
+.rick{
+    position:absolute;
+    z-index: 4;
+    top:55%;
+    left: 20px;
+    display:none;
+}
+.rick img{
+    width: 180px;
+}
+
+@media (min-width: 321px){
+    .teclas button{
+        width: 27px;
+        height:27px;
+    }
+    #categoria{
+        font-size: 1.3em;
+        text-shadow: 2px 2px 2px black;
+    }
+}
+@media (max-width: 376px){
+    #palavra-secreta{
+        font-size:1.5em;
+    }
+    .teclas button{
+        width: 30px;
+        height:30px;
+    }
+    .letras{
+        width:18px;
+    }
+    #categoria{
+        font-size: 1.2em;
+        text-shadow: 2px 2px 2px black;
+    }
+   
+}
+@media (min-width: 768px){
+    .container{
+        display: block;
+        margin: 10% auto
+    }
+    .containerJogo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10% auto;
+    }    
+    .ilustracao h1{
+        font-size: 10em;
+        margin: 0 auto;
+        color: greenyellow;
+        padding: 10px 20px;
+        transition: 1s all;
+        background: rgba(0,0,0,0.5);
+        border-radius: 20px;
+        border: solid 2px greenyellow;
+    }
+    .portal{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display:none;
+        margin: -10% auto;
+    }
+    .portal img{
+        width: 700px;
+    }
+    #imagem{
+        width:400px;
+        height: 400px;
+    }
+    .inputPadrao{
+        height: 40px;
+    }  
+
+    .teclas button{
+        width: 50px;
+        height:50px;
+        font-size: 1.5em;
+    }
+    .letras{
+        margin:20px;
+        width:30px;
+        font-size: 2em;
+        border-bottom: solid 3px greenyellow;
+    }
+    
+    #categoria{
+        font-size: 2em;
+        color: greenyellow;
+        text-shadow: 2px 2px 2px black;
+    }
+   
+}
+@media (min-width: 1024px){
+    .home{
+        background-size: cover;
+        background-position: bottom;
+    }
+    .bodyPlay{
+        background-size: cover ;
+    }
+    .container{
+        display: flex;
+        margin:0 auto;
+    }
+    .containerJogo{
+        margin: 0 auto;
+    }    
+    .ilustracao h1{
+        font-size: 10em;
+        margin: 0 auto;
+        color: greenyellow;
+        padding: 10px 20px;
+        transition: 1s all;
+        background: rgba(0,0,0,0.5);
+        border-radius: 20px;
+        border: solid 2px greenyellow;
+    }
+    .portal{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display:none;
+        margin: -15% auto;
+    }
+    #form-adiciona{
+        display:flex;
+    } 
+    .inputPadrao{
+        height: 40px;
+    }
+    #imagem{
+        width:400px;
+        height: 400px;
+    }  
+    .rick{
+        margin-top: -5%;
+    }
+    .rick img{
+        width: 350px;
+    }
+    .teclas button{
+        width: 50px;
+        height:50px;
+        font-size: 1.5em;
+    }
+    .letras{
+        margin:20px;
+        width:30px;
+        font-size: 2em;
+        border-bottom: solid 3px greenyellow;
+        text-shadow: 2px 2px 2px black;
+    }
+    
+    #categoria{
+        font-size: 2em;
+        color: greenyellow;
+        text-shadow: 2px 2px 2px black;
+    }
+   
+}

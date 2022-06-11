@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add palavras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="js/adicionar.js" defer></script>
+    <script src="js/onload.js" defer></script>
+</head>
+<body class="home">
+    <div class="container">
+        <div class="ilustracao">
+            <h2>Adicione as palavras</h2>
+            <form action="" id="form-adiciona">
+                <fieldset>
+                    <label for="palavra">PALAVRA</label>
+                    <input type="text" name="adicionar" class="inputPadrao" placeholder="MACACO" id="nome" >
+                </fieldset>
+                <fieldset>
+                    <label for="categoria">CATEGORIA</label>
+                    <input type="text" name="adicionar" class="inputPadrao" placeholder="ANIMAL JOAO" id="categoria">
+                </fieldset>
+                <button class="bnt-nav" id="adicionar-palavra">Adicionar</button>
+            </form>
+            <span class="portal">
+                <img src="./img/potaltransp.gif" alt="">    
+            </span>
+            <p id="mensagens-erro"></p>
+            <p id="mensagem-sucesso"></p>
+        </div>
+        <div class="navegacao">
+            <button class="bnt-nav" onclick="play()">Play</button>
+            <button class="bnt-nav" onclick="home()">Home</button>
+            <button class="bnt-nav" onclick="creditos()">Creditos</button>
+        </div>
+    </div>    
+</body>
+</html>
