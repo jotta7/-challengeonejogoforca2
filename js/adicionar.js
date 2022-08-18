@@ -1,71 +1,8 @@
  let palavras = [
   pl ={
-      nome: 'MORCEGO',
+      nome: 'MACACO',
       categoria: 'ANIMAL'
-  },
-  
-  pl ={
-      nome: 'PERCEVEJO',
-      categoria: 'ANIMAL'
-  },
-  
-  pl ={
-      nome: 'CIGARRA',
-      categoria: 'ANIMAL VIH'
-  },
-  pl ={
-      nome: 'TAMANDUA',
-      categoria: 'ANIMAL VIH'
-  },
-  pl ={
-      nome: 'CABECEIRA',
-      categoria: 'OBJETO'
-  },
-  pl ={
-      nome: 'ROLDANA',
-      categoria: 'OBJETO'
-  },
-  pl ={
-      nome: 'CONDICIONADOR',
-      categoria: 'OBJETO VIH'
-  },
-  pl ={
-      nome: 'AMPULHETA',
-      categoria: 'OBJETO VIH'
-  },
-  pl ={
-      nome: 'DINAMARCA',
-      categoria: 'LUGARES'
-  },
-  pl ={
-      nome: 'RONDONIA',
-      categoria: 'LUGARES'
-  },
-  pl ={
-      nome: 'MEXICO',
-      categoria: 'LUGARES VIH'
-  },
-  pl ={
-      nome: 'MANICOMIO',
-      categoria: 'LUGARES VIH'
-  },
-  pl ={
-      nome: 'ESOFAGO',
-      categoria: 'PARTE DO CORPO'
-  },
-  pl ={
-      nome: 'PANCREAS',
-      categoria: 'PARTE DO CORPO'
-  },
-  pl ={
-      nome: 'COTOVELO',
-      categoria: 'PARTE DO CORPO VIH'
-  },
-  pl ={
-      nome: 'ARTICULACAO',
-      categoria: 'PARTE DO CORPO VIH'
-  },
-    
+  }  
 ];
 
 
